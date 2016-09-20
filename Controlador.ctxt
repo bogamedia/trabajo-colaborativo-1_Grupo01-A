@@ -1,10 +1,11 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Controlador()
+comment0.text=\n\ El\ constructor\ de\ objetos\ Controlador\ se\ encarga\ de\ inicializar\ las\ variables\n\ y\ objetos\ globales.\n
 comment1.params=
 comment1.target=void\ iniciar()
-comment1.text=\n\ \ metodo\ principal\ ya\ que\ representa\ el\ menu\ desde\ el\ cual\ se\ elije\ que\ accion\ ejecutar.\n
+comment1.text=\n\ El\ m\u00E9todo\ iniciar\ es\ el\ m\u00E9todo\ principal.\ Despliega\ un\ men\u00FA\ desde\ el\ cual\ se\n\ pueden\ ejecutar\ los\ diversos\ m\u00E9todos.\n\ \n
 comment2.params=argumentos
 comment2.target=void\ main(java.lang.String[])
-comment2.text=\n\ \ metodo\ main,\ iniciar\ el\ programa\ \n
+comment2.text=\n\ \ El\ m\u00E9todo\ main\ ejecuta\ la\ totalidad\ del\ programa.\n
 numComments=3

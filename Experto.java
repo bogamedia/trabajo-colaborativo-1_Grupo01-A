@@ -1,3 +1,4 @@
+// Importación de las clases utilizadas en los métodos.
 import javax.swing.JOptionPane;
 import java.util.GregorianCalendar; 
 import javax.swing.JFileChooser;
@@ -10,30 +11,41 @@ import java.util.Locale;
 import java.lang.Character;
 
 /**
- * Write a description of class TC1_A here.
+ * La clase Experto contiene los métodos solicitados para el trabajo colaborativo.
  * 
  * @author Javier Padilla
  *         Tatiana Briones
  *         Hansel Calderon
  *         Alejandro Soto B26583
- * @version
+ *         Carlos Bogarín B21013
+ *         
+ * @version Lunes 19 de Setiembre, 2016
  */
 public class Experto
 {
-    /**campos**/
+    // Declaración de objetos globales.
     Interfaz interfaz;
 
-    //controlador
+    /**
+     * El Constructor de la clase Experto recibe una interfaz por parámetro de parte
+     *  del controlador.
+     */
     public Experto(Interfaz laInterfaz)
     {
+        //  Asignación del objeto interfaz recibido por parámetro al objeto de la clase local.
         interfaz = laInterfaz;
     }
 
     
-         /**
-    Realizado y documentado por: B26583 - Alejandro Soto Chaves
-    Correcciones:
-     */
+    /**
+     * La clase puntoUno le pide al usuario mediante una lista desplegable de opciones 
+     * (no son botones, es una lista de opciones) el número de día del mes y luego 
+     * le solicite el mes usando un conjunto de botones. 
+     * El método devuelve una hilera que contiene ambos datos. 
+     * 
+     * Realizado y documentado por: B26583 - Alejandro Soto Chaves
+     * Correcciones: Carlos Bogar[in (estilo y documentación faltante).
+    */
     
     public void puntoUno()
     {
