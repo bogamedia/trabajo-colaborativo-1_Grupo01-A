@@ -21,4 +21,5 @@ comment6.target=java.lang.Object\ elegirEntreOpcionesDesplegables(java.lang.Stri
 comment6.text=\n\ \ muestra\ una\ lista\ desplegable\ de\ opciones\ para\ poder\ elegir\ y\ devuelve\ un\ int\ segun\ \n\ \ la\ opcion\ que\ elija\ el\ usuario\n
 comment7.params=mensaje
 comment7.target=int\ pedirConfirmacionYesNo(java.lang.String)
+comment7.text=\n\ \n
 numComments=8

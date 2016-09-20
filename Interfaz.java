@@ -113,7 +113,10 @@ public class Interfaz extends JOptionPane
         opcion = this.showInputDialog(null, mensaje, TITULO, this.INFORMATION_MESSAGE, IMAGEN, misOpciones,misOpciones[0]);
         return opcion ;
     }
-
+    
+    /**
+     * 
+     */
     public int pedirConfirmacionYesNo(String mensaje)
     {
 

@@ -44,91 +44,133 @@ public class Experto
      * El método devuelve una hilera que contiene ambos datos. 
      * 
      * Realizado y documentado por: B26583 - Alejandro Soto Chaves
-     * Correcciones: Carlos Bogar[in (estilo y documentación faltante).
+     * Correcciones: Carlos Bogarín (estilo y documentación faltante, además de
+     *                                  nombres de variables más siginificativos).
     */
     
     public void puntoUno()
     {
-        //Pregunta por un número de día del mes//
-
+        // Arreglo de los números de día del mes.
         String [] fecha = {
-                "1", "2","3", "4", "5", "6", "7", "8","9","10","11","12","13","14","15","16","17","18","19","20","21", "22","23","24","25","26","27","28", "29","30","31"};
+                            "1", 
+                            "2",
+                            "3", 
+                            "4", 
+                            "5", 
+                            "6", 
+                            "7", 
+                            "8",
+                            "9",
+                            "10",
+                            "11",
+                            "12",
+                            "13",
+                            "14",
+                            "15",
+                            "16",
+                            "17",
+                            "18",
+                            "19",
+                            "20",
+                            "21", 
+                            "22",
+                            "23",
+                            "24",
+                            "25",
+                            "26",
+                            "27",
+                            "28", 
+                            "29",
+                            "30",
+                            "31"
+                        };
+        
+        // Se le solicita al usuario el día del mes.
+        String diaEscogido = (String) interfaz.elegirEntreOpcionesDesplegables("Escoja un día del mes:", 
+                                                                                fecha);
 
-        String fechaEscog = (String) interfaz.elegirEntreOpcionesDesplegables("Escoja un día del mes:", fecha);
-
-        //Pregunta por el mes que corre//
-
+        //  Arreglo que contiene los meses del ano.
         String [] mes = {
-                "Enero", "Febrero","Marzo", "Abril",  "Mayo",  "Junio", "Julio", "Agosto",  "Setiembre", "Octubre", "Noviembre", "Diciembre"};
+                            "Enero", "Febrero","Marzo", "Abril",  "Mayo",  "Junio", 
+                            "Julio", "Agosto",  "Setiembre", "Octubre", "Noviembre", "Diciembre"
+                        };
+        
+        //  Se le solicita al usuario que seleccione un mes.
+        int seleccion = interfaz.elegirEntreOpciones ("Seleccione un mes:",mes);
+        
+        // Se almacena el mes elegido por el usuario.
+        String mesEscogido = " ";
 
-        int Selection = interfaz.elegirEntreOpciones ("Seleccione un mes:",mes);
-
-        String outcomeSelection = " ";
-
-        switch (Selection) {
+        switch (seleccion) 
+        {
             case 0:
-            outcomeSelection = "Enero";
+            mesEscogido = "Enero";
             break;
 
             case 1:
-            outcomeSelection = "Febrero";
+            mesEscogido = "Febrero";
             break;
 
             case 2: 
-            outcomeSelection = "Marzo";
+            mesEscogido = "Marzo";
             break;
 
             case 3: 
-            outcomeSelection = "Abril";
+            mesEscogido = "Abril";
             break;
 
             case 4: 
-            outcomeSelection = "Mayo";
+            mesEscogido = "Mayo";
             break;
 
             case 5: 
-            outcomeSelection = "Junio";
+            mesEscogido = "Junio";
             break;
 
             case 6: 
-            outcomeSelection = "Julio";
+            mesEscogido = "Julio";
             break;
 
             case 7: 
-            outcomeSelection = "Agosto";
+            mesEscogido = "Agosto";
             break;
 
             case 8: 
-            outcomeSelection = "Setiembre";
+            mesEscogido = "Setiembre";
             break;
 
             case 9: 
-            outcomeSelection = "Octubre";
+            mesEscogido = "Octubre";
             break;
 
             case 10: 
-            outcomeSelection = "Noviembre";
+            mesEscogido = "Noviembre";
             break;
 
             case 11: 
-            outcomeSelection = "Diciembre";
+            mesEscogido = "Diciembre";
             break;
         }
 
         //Muestra ambos datos introducidos en una ventana//
 
-        interfaz.decirMensaje("Día: " + fechaEscog + "\nMes: "  + outcomeSelection);
+        interfaz.decirMensaje("Día: " + diaEscogido + "\nMes: "  + mesEscogido);
 
     }
+    
     /**
-    Realizado y documentado por: Javier Padilla
-    Correcciones:
+     * El método puntoDos solicita al usuario dos fechas y le muestra 
+     * la cantidad de días transcurridos entre ambas. 
+     * Utiliza la clase GregorianCalendar.
+     * 
+     * Realizado y documentado por: Javier Padilla
+     * Correcciones:
      */
     public void puntoDos()
     {
 
         try{
-            //Pide al usuario la fecha y divide la string en un array para acceder cada int independientemente.
+            //Pide al usuario la fecha y divide la hilera en un array para acceder cada entero independientemente.
             String inputFecha = interfaz.pedirHilera("Digite una fecha con el formato  AÑO/MES/DÍA");
             String[] fecha = inputFecha.split("/");
             int año = Integer.parseInt(fecha[0]);
@@ -156,8 +198,14 @@ public class Experto
     }
 
     /**
-    Realizado y documentado por: Javier Padilla.
-    Correcciones:
+     * El método puntoTres recupera un archivo ubicado en la misma carpeta del proyecto,
+     * este contiene dos líneas, la primera con un nombre y la segunda con un número.
+     * Estos datos se le despliegan al usuario.
+     * El método luego solicita al usuario su nombre y edad y los guarda en el mismo 
+     * archivo.
+     * 
+     * Realizado y documentado por: Javier Padilla.
+     * Correcciones:
      */
     public void puntoTres()
     {
@@ -196,8 +244,11 @@ public class Experto
     }
 
     /**
-    Realizado y documentado por: Tatiana Briones.
-    Correcciones:
+     * El método puntoCuatro le permite al usuario seleccionar imágenes y se las muestra
+     * en una ventana.
+     * 
+     * Realizado y documentado por: Tatiana Briones.
+     * Correcciones:
      */
     public void puntoCuatro()
     {
@@ -310,8 +361,11 @@ public class Experto
     }
 
     /**
-    Realizado y documentado por: Tatiana Briones.
-    Correcciones:
+     * El método puntoSeis solicita al usuario su peso en kilogramos y su estatura en
+     * metros y le muestra al usuario su índice de masa corporal.
+     * 
+     * Realizado y documentado por: Tatiana Briones.
+     * Correcciones:
      */
     public void puntoSeis()
     {

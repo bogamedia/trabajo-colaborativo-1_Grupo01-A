@@ -20,7 +20,8 @@ import javax.swing.ImageIcon;
  *          Carlos Bogarín: B21013: Se encargó de realizar el punto cinco,
  *                      documentar el punto cinco y otros apartados, 
  *                      además de correcciones de estilo y redacción 
- *                      para facilitar la comprensión y lectura del código. 
+ *                      para facilitar la comprensión y lectura del código.
+ *                      Correcciones menores como nombres de variables más descriptivos.
  *                      
  *  
  * @version Lunes 19 de Setiembre, 2016                      
