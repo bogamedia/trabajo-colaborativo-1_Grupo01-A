@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Controlador()
+comment1.params=
+comment1.target=void\ iniciar()
+comment1.text=\n\ \ metodo\ principal\ ya\ que\ representa\ el\ menu\ desde\ el\ cual\ se\ elije\ que\ accion\ ejecutar.\n
+comment2.params=argumentos
+comment2.target=void\ main(java.lang.String[])
+comment2.text=\n\ \ metodo\ main,\ iniciar\ el\ programa\ \n
+numComments=3

@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=elTitulo\ elNombreArchivoImagen
+comment0.target=Interfaz(java.lang.String,\ java.lang.String)
+comment1.params=mensaje
+comment1.target=void\ decirMensaje(java.lang.String)
+comment1.text=\n\ \ muestra\ un\ mensaje\ al\ usuario\n
+comment2.params=mensaje
+comment2.target=java.lang.String\ pedirHilera(java.lang.String)
+comment2.text=\n\ \ solicita\ al\ usuario\ una\ hilera\ de\ caracteres\n
+comment3.params=mensaje
+comment3.target=int\ pedirNumero(java.lang.String)
+comment3.text=\n\ \ solicita\ al\ usuario\ un\ numero\n
+comment4.params=mensaje
+comment4.target=char\ pedirChar(java.lang.String)
+comment4.text=\n\ \ solicita\ al\ usuario\ un\ char\n
+comment5.params=mensaje\ misOpciones
+comment5.target=int\ elegirEntreOpciones(java.lang.String,\ java.lang.Object[])
+comment5.text=\n\ muestras\ opciones\ en\ un\ cuadro\ de\ texto\ recibidas\ en\ un\ arreglo,\ devuelve\ un\ int\ segun\ \n\ la\ opcion\ que\ eliija\ el\ usuario\n
+comment6.params=mensaje\ misOpciones
+comment6.target=java.lang.Object\ elegirEntreOpcionesDesplegables(java.lang.String,\ java.lang.Object[])
+comment6.text=\n\ \ muestra\ una\ lista\ desplegable\ de\ opciones\ para\ poder\ elegir\ y\ devuelve\ un\ int\ segun\ \n\ \ la\ opcion\ que\ elija\ el\ usuario\n
+comment7.params=mensaje
+comment7.target=int\ pedirConfirmacionYesNo(java.lang.String)
+numComments=8

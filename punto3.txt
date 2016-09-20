@@ -1,0 +1,6 @@
+Nombre: Alejandro
+Edad: 18
+
+
+Nombre: Carlos
+Edad: 23

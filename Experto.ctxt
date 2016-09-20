@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=laInterfaz
+comment0.target=Experto(Interfaz)
+comment1.params=
+comment1.target=void\ puntoUno()
+comment1.text=\n\ \ \ \ Realizado\ y\ documentado\ por\:\ B26583\ -\ Alejandro\ Soto\ Chaves\n\ \ \ \ Correcciones\:\n
+comment2.params=
+comment2.target=void\ puntoDos()
+comment2.text=\n\ \ \ \ Realizado\ y\ documentado\ por\:\ Javier\ Padilla\n\ \ \ \ Correcciones\:\n
+comment3.params=
+comment3.target=void\ puntoTres()
+comment3.text=\n\ \ \ \ Realizado\ y\ documentado\ por\:\ Javier\ Padilla.\n\ \ \ \ Correcciones\:\n
+comment4.params=
+comment4.target=void\ puntoCuatro()
+comment4.text=\n\ \ \ \ Realizado\ y\ documentado\ por\:\ Tatiana\ Briones.\n\ \ \ \ Correcciones\:\n
+comment5.params=vocal
+comment5.target=void\ puntoCinco(char)
+comment5.text=\n\ Realizado\ por\:\ Carlos\ Bogar\u00EDn\n\ Correcciones\:\ \n
+comment6.params=
+comment6.target=void\ puntoSeis()
+comment6.text=\n\ \ \ \ Realizado\ y\ documentado\ por\:\ Tatiana\ Briones.\n\ \ \ \ Correcciones\:\n
+numComments=7
