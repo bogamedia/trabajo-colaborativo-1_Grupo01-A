@@ -5,6 +5,9 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.ImageIcon;
 import javax.swing.JTextField;
 import java.io.*;
+import java.text.Collator;
+import java.util.Locale;
+import java.lang.Character;
 
 /**
  * Write a description of class TC1_A here.
@@ -251,36 +254,91 @@ public class Experto
             }            
         }
     }
+    
     /**
+     * El método puntoCinco recibe como parámetro una vocal en minúscula y sin acento. 
+     * El método pide al usuario que la ingrese y verifica si lo hizo sin importar si fue en 
+     * mayúscula o con acento.
+     * 
      * Realizado por: Carlos Bogarín
      * Correcciones: 
      */
     public void puntoCinco(char vocal)
     {
-        //
+        //  Declaración de variables locales.
         char[] vocalesMinusculas;
         boolean esVocalMinuscula;
         int posicion;
         int cantidadVocales;
-        //
+        char vocalUsuario;
+        boolean vocalesSonIguales;
+        
+        //  Declaración de objetos locales.
+        Collator colador;   /* El objeto colador se encargará de comparar los caracteres, 
+        obviando diferencias como acentos o mayúsculas y minúsculas.*/
+        
+        /* Los objetos de tipo Character perimitirán la conversión de caracteres a String
+           para su posterior comparación*/
+        Character vocalOriginal;
+        Character vocalAComparar;
+        
+        //  Inicialización de variables y objetos locales.
         vocalesMinusculas = new char[] {'a', 'e', 'i', 'o', 'u'};
-        // vocalesMinusculas = {'a', 'e', 'i', 'o', 'u'};
         esVocalMinuscula = false;
         posicion = 0;
         cantidadVocales = vocalesMinusculas.length;
+        vocalUsuario = '0';
+        vocalesSonIguales = false;
+        
+        /*  El objeto colador tomará como regla de comparación el conjunto de
+           caracteres del alfabeto inglés estadounidense.*/
+        colador = Collator.getInstance(Locale.US);
+        /*  El objeto colador tomará como relevantes las diferencias de tipo primarias,
+           por ejemplo "a" vs "b", ;pero obviará diferencias como acentos o mayúsculas
+           y minúsculas. */
+        colador.setStrength(Collator.PRIMARY);
+        //  Se asigna la vocal suministrada por el administrador a un objeto Character.
+        vocalOriginal = new Character(vocal);
+        
         for (posicion = 0; posicion < cantidadVocales; posicion++)
         {
-            //
-            if(vocal == vocalesMinusculas[0])
+            //  Se verifica que la vocal recibida por el administrador sea en efecto una vocal en minúsucla.
+            if(vocal == vocalesMinusculas[posicion])
             {
-                //
                 esVocalMinuscula = true;
             }
             else
             {
                 //  Caso intencionalmente en blanco.
             }
+
         }
+        
+        if (!esVocalMinuscula)
+        {
+            //  Se hace saber que el administrador introdujo un carácter que no es una vocal.
+            this.interfaz.decirMensaje("Administrador ha ingresado un carácter inválido.");
+        }
+        else
+        {
+            //  Se le pide al usuario que digite un caracter.
+            vocalUsuario = this.interfaz.pedirChar("Usuario: Digite la vocal.");
+            //  Se asigna la vocal al objeto de tipo Character.
+            vocalAComparar = new Character(vocalUsuario);
+            //  Se comparan los caracters y se asigna si son iguales a la variable vocalesSonIguales.
+            vocalesSonIguales = colador.equals(vocalOriginal.toString(), vocalAComparar.toString());
+            if(vocalesSonIguales)
+            {
+                //  Si las vocales son iguales.
+                this.interfaz.decirMensaje("Usuario ha ingresado la vocal correcta.");
+            }
+            else
+            {
+                //  Si las vocales son distintas
+                this.interfaz.decirMensaje("Usuario ha ingresado la vocal incorrecta.");
+            }
+        }
+        //Fin del método.
     }
 
     /**

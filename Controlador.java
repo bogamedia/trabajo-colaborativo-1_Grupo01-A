@@ -51,7 +51,7 @@ public class Controlador
                 break;
 
                 case 4: 
-                experto.puntoCinco(interfaz.pedirChar("Administrador: Digite un caracter"));
+                experto.puntoCinco(interfaz.pedirChar("Administrador: Digite una vocal en minúscula sin acentos"));
                 
                 break;
 
