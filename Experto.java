@@ -38,120 +38,76 @@ public class Experto
     public void puntoUno()
     {
         //Pregunta por un número de día del mes//
-        
+
         String [] fecha = {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"
-          };
-          
-                    
-          String fechaEscog = (String) JOptionPane.showInputDialog(null, "Escoja un día del mes:", "Fecha", JOptionPane.DEFAULT_OPTION, null, fecha, fecha[0]);
-          
-          
+                "1", "2","3", "4", "5", "6", "7", "8","9","10","11","12","13","14","15","16","17","18","19","20","21", "22","23","24","25","26","27","28", "29","30","31"};
+
+        String fechaEscog = (String) interfaz.elegirEntreOpcionesDesplegables("Escoja un día del mes:", fecha);
+
         //Pregunta por el mes que corre//
-        
+
         String [] mes = {
-            "Enero", 
-            "Febrero",
-            "Marzo", 
-            "Abril", 
-            "Mayo", 
-            "Junio", 
-            "Julio", 
-            "Agosto", 
-            "Setiembre", 
-            "Octubre", 
-            "Noviembre", 
-            "Diciembre"
-            
-          };
-        
-        int Selection = JOptionPane.showOptionDialog (null, "Seleccione un mes:", "Mes", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, mes, mes[0]);
-        
-          String outcomeSelection = " ";
-        
-                        
-        if (Selection == 0) {
-            outcomeSelection = "Enero";}
-        else {
-            if (Selection == 1) {
-                outcomeSelection = "Febrero";}
-            else {
-                if (Selection == 2) {
-                    outcomeSelection = "Marzo";}
-                else {
-                    if (Selection == 3) {
-                        outcomeSelection = "Abril";}
-                    else {
-                        if (Selection == 4) {
-                            outcomeSelection = "Mayo";}
-                        else { 
-                            if (Selection == 5) {
-                                outcomeSelection = "Junio";}
-                            else {
-                                if (Selection == 6) {
-                                    outcomeSelection = "Julio";}
-                                else {
-                                    if (Selection == 7) {
-                                        outcomeSelection = "Agosto";}
-                                    else {
-                                        if (Selection == 8) {
-                                            outcomeSelection = "Setiembre";}
-                                        else {
-                                            if (Selection == 9) {
-                                                outcomeSelection = "Octubre";}
-                                            else {
-                                                if (Selection == 10) {
-                                                    outcomeSelection = "Noviembre";}
-                                                else {
-                                                    outcomeSelection = "Diciembre";}
-                                                        
-                                                }
-                                            }
-                                        }
-                                    }                              
-                                }                                                  
-                            }
-                         }
-                     }
-                 }
-             }  
-        
+                "Enero", "Febrero","Marzo", "Abril",  "Mayo",  "Junio", "Julio", "Agosto",  "Setiembre", "Octubre", "Noviembre", "Diciembre"};
+
+        int Selection = interfaz.elegirEntreOpciones ("Seleccione un mes:",mes);
+
+        String outcomeSelection = " ";
+
+        switch (Selection) {
+            case 0:
+            outcomeSelection = "Enero";
+            break;
+
+            case 1:
+            outcomeSelection = "Febrero";
+            break;
+
+            case 2: 
+            outcomeSelection = "Marzo";
+            break;
+
+            case 3: 
+            outcomeSelection = "Abril";
+            break;
+
+            case 4: 
+            outcomeSelection = "Mayo";
+            break;
+
+            case 5: 
+            outcomeSelection = "Junio";
+            break;
+
+            case 6: 
+            outcomeSelection = "Julio";
+            break;
+
+            case 7: 
+            outcomeSelection = "Agosto";
+            break;
+
+            case 8: 
+            outcomeSelection = "Setiembre";
+            break;
+
+            case 9: 
+            outcomeSelection = "Octubre";
+            break;
+
+            case 10: 
+            outcomeSelection = "Noviembre";
+            break;
+
+            case 11: 
+            outcomeSelection = "Diciembre";
+            break;
+        }
+
         //Muestra ambos datos introducidos en una ventana//
-        
-        interfaz.showMessageDialog(null, "Día: " + fechaEscog + "\nMes: "  + outcomeSelection,"T.C. 1, Grupo 1A",JOptionPane.INFORMATION_MESSAGE);
+
+        interfaz.decirMensaje("Día: " + fechaEscog + "\nMes: "  + outcomeSelection);
 
     }
-
     /**
     Realizado y documentado por: Javier Padilla
     Correcciones:

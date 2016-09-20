@@ -4,7 +4,7 @@ import javax.swing.ImageIcon;
  * 
  * @autores Javier Padilla: se encargo de crear y documentar el punto dos y tres
  *          Tatiana Briones: se encargo de crear y documentar el punto cuatro y seis
- *          Hansel Calderon: crear la clase Controlador y aplicar patron arquitectura de clases, documentacion
+ *          Hansel Calderon: crear la clase Controlador e Interfaz y aplicar patron arquitectura de clases, documentacion, y correciones al punto uno
  *          Alejandro Soto B26583: se encargó de crear y documentar el punto uno, así como de detalles de forma y presentación.
  *          Carlos Bogarín: B21013: Se encargó de realizar el punto cinco. 
  */
@@ -12,7 +12,7 @@ public class Controlador
 {
     private Interfaz interfaz;
     private Experto experto;
-    private final String TITULO = "Trabajo Colaborativo 2, Grupo A";
+    private final String TITULO = "Trabajo Colaborativo 2, Grupo 01, Equipo A";
     private ImageIcon IMAGEN = new ImageIcon("costa-rica.PNG"); 
 
     public Controlador()
